@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería Elegante - Tu Tienda de Joyas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">♦</span>
+                <span class="logo-text">Joyería Elegante</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+<div class="header-actions">
+                <div class="search-container">
+                    <button class="btn-icon search-toggle" aria-label="Buscar">
+                        <span>🔍</span>
+                    </button>
+                    <div class="search-input-wrapper">
+                        <input type="text" class="search-input" placeholder="Buscar productos...">
+                        <button class="search-close" aria-label="Cerrar búsqueda">✕</button>
+                    </div>
+                </div>
+                <a href="Carrito.php" class="btn-icon" aria-label="Carrito">
+                    <span>🛒</span>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Belleza Atemporal</h1>
+            <p class="hero-subtitle">Descubre nuestra colección exclusiva de joyería artesanal</p>
+            <a href="#catalogo" class="btn btn-primary">Ver Colección</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image category-rings"></div>
+                    <div class="category-info">
+                        <h3>Anillos</h3>
+                        <p>Elegantes piezas para toda ocasión</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image category-necklaces"></div>
+                    <div class="category-info">
+                        <h3>Collares</h3>
+                        <p>Diseños que iluminan tu mirada</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image category-earrings"></div>
+                    <div class="category-info">
+                        <h3>Arracadas</h3>
+                        <p>Elegancia en cada detalle</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image category-bracelets"></div>
+                    <div class="category-info">
+                        <h3>Pulseras</h3>
+                        <p>Joyas que abrazan tu muñeca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <a href="Catálogo.php" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="catalogo" class="products">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="section-subtitle">Piezas exclusivas seleccionadas especialmente para ti</p>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Nuevo</span>
+                        <div class="product-placeholder">💍</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Anillos</span>
+                        <h3 class="product-name">Anillo Diamante</h3>
+                        <p class="product-description">Anillo con piedra diamante de corte brillante</p>
+                        <div class="product-footer">
+                            <span class="product-price">$1,299.00</span>
+                            <button class="btn btn-secondary">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">📿</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Collares</span>
+                        <h3 class="product-name">Collar Perlas</h3>
+                        <p class="product-description">Collar de perlas naturales cultivadas</p>
+                        <div class="product-footer">
+                            <span class="product-price">$899.00</span>
+                            <button class="btn btn-secondary">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">-20%</span>
+                        <div class="product-placeholder">💎</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Arracadas</span>
+                        <h3 class="product-name">Arracadas Zafiro</h3>
+                        <p class="product-description">Arracadas con zafiros azules naturales</p>
+                        <div class="product-footer">
+                            <span class="product-price">$649.00</span>
+                            <button class="btn btn-secondary">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">⭕</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pulseras</span>
+                        <h3 class="product-name">Pulsera Oro</h3>
+                        <p class="product-description">Pulsera de oro 18k con diamantes</p>
+                        <div class="product-footer">
+                            <span class="product-price">$1,499.00</span>
+                            <button class="btn btn-secondary">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">💍</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Anillos</span>
+                        <h3 class="product-name">Anillo Rubí</h3>
+                        <p class="product-description">Anillo con rubí sintético de alta calidad</p>
+                        <div class="product-footer">
+                            <span class="product-price">$459.00</span>
+                            <button class="btn btn-secondary">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Popular</span>
+                        <div class="product-placeholder">📿</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Collares</span>
+                        <h3 class="product-name">Collar Cristal</h3>
+                        <p class="product-description">Collar con cristales Swarovski</p>
+                        <div class="product-footer">
+                            <span class="product-price">$329.00</span>
+                            <button class="btn btn-secondary">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p class="about-description">
+                        Con más de 20 años de experiencia en el mundo de la joyería, 
+                        <strong>Joyería Elegante</strong> se ha convertido en synonymous de calidad, 
+                        elegancia y tradición artesanal.
+                    </p>
+                    <p class="about-description">
+                        Cada pieza es seleccionada cuidadosamente, garantizando autenticidad y 
+                        brillo perdurable. Our compromiso es hacer que cada momento especial 
+                        brille con la luz de nuestras piezas únicas.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Garantía de por vida</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Certificación de autenticidad</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text">Envío seguro gratis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">✨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">Estamos para ayudarte. Escríbenos y te responderemos pronto.</p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. Principal 123, Centro<br>Ciudad de México, CP 06000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+52 (55) 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contacto@joyeriaelegante.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lun-Sáb: 10:00 - 20:00<br>Dom: 11:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Asunto de tu mensaje">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">♦</span>
+                        <span class="logo-text">Joyería Elegante</span>
+                    </div>
+                    <p class="footer-description">
+                        Tu destino para joyería exclusiva y artesanías únicas. 
+                        Brindando belleza y elegancia desde 2004.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Instagram">ig</a>
+                        <a href="#" class="social-link" aria-label="Twitter">tw</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">pi</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Categorías</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Anillos</a></li>
+                        <li><a href="#">Collares</a></li>
+                        <li><a href="#">Arracadas</a></li>
+                        <li><a href="#">Pulseras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-text">Suscríbete para recibir ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Joyería Elegante. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search toggle functionality
+        const searchToggle = document.querySelector('.search-toggle');
+        const searchWrapper = document.querySelector('.search-input-wrapper');
+        const searchClose = document.querySelector('.search-close');
+        const searchInput = document.querySelector('.search-input');
+
+        // Toggle search on button click
+        searchToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            searchWrapper.classList.toggle('active');
+            if (searchWrapper.classList.contains('active')) {
+                searchInput.focus();
+            }
+        });
+
+        // Close search on X button click
+        searchClose.addEventListener('click', () => {
+            searchWrapper.classList.remove('active');
+        });
+
+        // Close search when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!searchWrapper.contains(e.target) && !searchToggle.contains(e.target)) {
+                searchWrapper.classList.remove('active');
+            }
+        });
+
+        // Prevent closing when clicking inside the search input
+        searchInput.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>
